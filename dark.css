@@ -1,0 +1,542 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, * {
+    transition: 0.5s;
+
+    transition-property: all;
+    transition-timing-function: ease;
+
+    color: #000000;
+}
+
+h1, h2 {
+    font-family: 'Sora', sans-serif;
+}
+body {
+    font-family: 'Titillium Web', sans-serif;
+    max-width: 100%;
+
+    background-color: #2e2e2e;
+}
+
+p {
+    color: #ffffff;
+}
+/********
+Menu
+********/
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    background-color: #535353;
+    font-family: 'Fira Mono', monospace;
+
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(255,117,20,1);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(255,117,20,1);
+    box-shadow: 3px 3px 5px 0px rgba(255,117,20,1);;
+}
+
+.menu nav a, #button {
+    padding: 0px 15px 0px 20px;
+    text-decoration: none;
+    color: #ff7514;
+}
+.menu h4 {
+    padding-left: 60px;
+    color: #ff7514;
+}
+.menu div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#button {
+    border: 1px solid #ff7514;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 40px;
+}
+
+
+/********
+Prima Parte: chi sono
+*********/
+.bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 92vh;
+    max-width: 100%;
+    background-color: #535353;
+}
+
+.bio div h1 {
+    font-size: 45px;
+    text-align: center;
+    margin-top: 35px;
+    margin-right: 10px;
+}
+
+.bio div p {
+    margin-top: 30px;
+    font-size: 20px;
+    margin-left: 45px;
+}
+.evidenziato {
+    color: #ff7514;
+    font-size: 1.1em;
+}
+
+.bio-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.myPhoto img{
+    margin-right: 100px;
+    margin-top: 80px;
+    border-radius: 8px;
+
+    -webkit-box-shadow: 3px 4px 6px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 3px 4px 6px 0px rgba(0,0,0,1);
+    box-shadow: 3px 4px 6px 0px rgba(0,0,0,1);
+
+    max-width: 420px;
+}
+
+/********
+Zona temi
+*********/
+
+.temi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#light-theme, #dark-theme {
+    border-radius: 7px;
+    width: 40px;
+    height: 40px;
+}
+
+#light-theme {
+    background-color: #ffffff;
+    border: 2px solid #247ba0;
+}
+
+#dark-theme {
+    background-color: #535353;
+    border: 2px solid #ff7514;
+}
+
+#light-theme:hover, #dark-theme:hover {
+    transform: scale(1.5, 1.5);
+
+    cursor: pointer;
+}
+
+/********
+Seconda parte: Descrizione e competenze
+*********/
+
+.description {
+    background-color: #2e2e2e;
+    color: #000000;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.description h1 {
+    color: #ff7514;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.column1, .column3 {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #000000;
+    
+}
+
+.column1 img, .column3 img, .column1 svg, .column3 svg {
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(255,117,20,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(255,117,20,1);
+    box-shadow: 2px 2px 5px 0px rgba(255,117,20,1);
+
+    border-radius: 5px;;
+}
+
+.column2 {
+    width: 33.3%;
+}
+
+.column2 p {
+    margin-top: 10%;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.evidenziato2{
+    color: #ff7514;
+    font-weight: bold;
+}
+
+.evidenziato3 {
+    color: #ff7514;
+}
+
+
+/********
+Terza parte: perché io?
+*********/
+
+.WhyMe {
+    height: 100vh;
+    background-color: #535353;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.WhyMe div h1 {
+    color: #000000;
+    font-size: 45px;
+    padding-top: 45px;
+}
+
+.motivations {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 45px 10vh 0 10vh;
+    font-size: 1.3em;
+    text-align: left;
+}
+
+.motivation1 {
+    width: 30%;
+}
+
+.motivation2 {
+    width: 30%;
+}
+
+/********
+Quarta parte: contatti
+*********/
+
+.contatti {
+    height: 100vh;
+    background-color: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contatti h1 {
+    font-size: 45px;
+    color: #ffffff;
+    margin-top: 45px;
+}
+
+.contatti h1 strong {
+    color: #000000;
+}
+
+.icons-social {
+    margin: 40px 0;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    
+}
+
+.icons-social a {
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(255,117,20,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(255,117,20,1);
+    box-shadow: 2px 2px 5px 0px rgba(255,117,20,1);
+
+    border-radius: 5px;
+}
+
+.social:hover {
+    transform: scale(1.5, 1.5);
+}
+
+.contatti h3 {
+    color: #ff7514;
+    font-size: 1.3em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contatti h1 strong {
+    color: #ff7514;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button {
+    width: 25%;
+    background-color: #ff7514;
+    color: #000000;
+    border-radius: 5px;
+    border: none;
+    height: 2em;
+}
+.form {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+
+}
+
+label {
+    font-size: 1.3em;
+    margin-top: 15px;
+    color: #ffffff;
+}
+input {
+    margin: auto;
+    width: 95%;
+    border-radius: 5px;
+    border: none;
+    line-height: 2.5em;
+    padding-left: 7px;
+}
+
+textarea {
+    line-height: 1.1em;
+    border-radius: 5px;
+    border: none;
+    padding-left: 7px;
+}
+
+/********************************************************************************
+Smartphone setup
+********************************************************************************/
+
+@media only screen and (max-width:560px) {
+    .nav-bar, #button{
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .menu div h4 {
+        padding-left: 15px;
+        text-align: center;
+    }
+
+    .bio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .myPhoto img{
+        margin: 0 auto;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .temi {
+        margin: 10% 0;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        justify-content: space-around;
+    }
+
+    .column1, .column3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .column2 {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .column2 h1 {
+        margin: 0 auto;
+    }
+    .column2 p {
+        margin: 10px 20px;
+        font-size: 1.1em;
+    }
+
+    .WhyMe {
+        text-align: center;
+        height: 100%;
+    }
+
+    .motivations {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.1em;
+        height: 100%;
+    }
+    .motivations div {
+        width: 90%;
+        margin-bottom: 25px;
+    }
+
+    .motivation2 p {
+        margin-bottom: 10px;
+    }
+
+    .contatti {
+        text-align: center;
+        height: 100%;
+    }
+
+    .form {
+        flex-direction: column;
+        justify-content: space-around;    
+    }
+    .form div {
+        width: 95%;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+    button {
+        margin-top: 15px;
+        height: 10%;
+        width: 35%;
+    }
+}
+
+/****************************************************************************************
+Tablet setup
+*****************************************************************************************/
+
+@media only screen and (min-width:561px) and (max-width:980px) {
+
+    .nav-bar {
+        display: none;
+    }
+
+    .bio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50%;
+    }
+
+    .bio div p {
+        margin: 0;
+    }
+
+    .myPhoto, .myPhoto img {
+        margin: 0 auto;
+    }
+
+    .temi {
+        margin: 10% 0;
+    }
+
+    .description {
+        box-sizing: content-box;
+        height: 100%;
+    }
+
+    .column2 {
+        width: 50%;
+        margin-bottom: 25px;
+    }
+
+    .column1, .column3 {
+        width: 25%;
+    }
+
+    .WhyMe {
+        text-align: center;
+        height: 100%;
+    }
+
+    .motivations {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .motivation1, .motivation2 {
+        width: 45%;
+    }
+
+    .contatti {
+        height: 100%;
+    }
+
+    form {
+        height: 100%;
+    }
+    button {
+        margin-top: 7%;
+        margin-bottom: 15px;
+    }
+}
+
